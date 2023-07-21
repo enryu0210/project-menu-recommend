@@ -1,0 +1,51 @@
+/* FoodPage.css */
+
+.food-page-container {
+  display: flex;
+  flex-direction: column; /* 추가: 수직으로 정렬 */
+  align-items: center;
+  padding: 20px;
+}
+
+.category-cards {
+  display: flex;
+  flex-direction: column; /* 추가: 수직으로 정렬 */
+  align-items: center; /* 추가: 카드들을 가운데 정렬 */
+}
+
+.category-card {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* 추가: 카드들 사이에 간격 */
+}
+
+.category-card h3 {
+  margin: 0;
+}
+
+.category-card.selected {
+  background-color: #e0e0e0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
